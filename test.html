@@ -1,0 +1,46 @@
+<html>
+    <head>  
+    <title> "Contact form "</title>    
+    <style>body{background-color: crimson; font-family: fantasy;}
+        
+    </style>
+
+    </head>
+<body>
+    <!--normal text box-->
+    <h1>Idk this a test </h1>
+    <!--method and action make you go to another page once you hit submit-->
+    <form name = "ContactForm" method = "get" action = "https://www.google.com/">
+    <label for = "firstname">First name</label> <input type = "text" id = "firstname" required> 
+    <hr>
+    <!--required makes sure that they fill that field out-->
+    <!--max lenth makes sure that only certain length is able to go through -->
+    <label for = "lastname">Last name</label> <input type = "text" id = "lastname" maxlength = "5" required> 
+    <br>
+    <br>
+    <!--to choose an date -->
+    <label for ="date">Something Date</label><input type = "datetime-local" id ="date">
+    <br>
+    <br>
+    <!--basically like multiple choice -->
+    <label for ="mchoice">Idk random choice</label>
+        <input type = "radio" name = "mchoice">Choice 1 
+        <input type = "radio" name = "mchoice">Choice 2
+        <input type = "radio" name = "mchoice">Choice 3 
+        <input type = "radio" name = "mchoice">Choice 4 
+    <!--Dropdown-->
+    <br>
+    <br>
+     <label for ="univ">what univ u from </label>
+     <select id="univ" name = "univ">
+        <option value = "umd">UMD</option>
+        <option value = "utech">Utech</option>
+        <option value = "vtech">vtech</option>
+        <option value = "stanford">stanford</option>
+     </select>
+     <!--submit button-->
+     <br>
+     <br>
+     <input type = "submit" value = "send it ">
+    </form>
+</body>
